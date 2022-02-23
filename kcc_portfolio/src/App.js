@@ -1,12 +1,11 @@
-import { Flex, Grid, Heading, Link, Text, VStack } from "@chakra-ui/react";
-import { FaArrowRight } from "react-icons/fa";
+import { Box, Button, Divider, Flex, Heading, Link, Text, VStack } from "@chakra-ui/react";
+import { FaArrowRight, FaGithub, FaLinkedinIn, FaMailchimp } from "react-icons/fa";
 import { useColorMode } from '@chakra-ui/color-mode'
 
 import Navbar from "./components/Navbar";
-import ProjectCard from "./components/ProjectCard/ProjectCard";
-
-// Project Images
-import project_img_01 from './components/ProjectCard/img/project_img.jpg';
+import FeaturedProjectCards from "./components/ProjectCard/FeaturedProjectCards";
+import ExperienceList from "./components/Experience/ExperienceList";
+import EducationList from "./components/Education/EducationList";
 
 function App() {
 
@@ -43,46 +42,43 @@ function App() {
         {/* Featured Projects */}
         <Flex direction="column" p="0em 15em 5em 15em" align='flex-start' w="100%" alignItems='flex-start' verticalAlign='top' spacing="1em">
           <Text fontWeight="300" fontStyle="normal" fontSize="1.125rem">FEATURED PROJECTS</Text>
-          <Grid pt="2em" justify="left" align="left" templateColumns='repeat(3, 1fr)' gap="3em">
-            {/* Project Card Components */}
-              <ProjectCard
-                project_img={project_img_01}
-                project_name="Project 1"
-                project_desc="Proxy provider website including authentication, dashboard and dynamic features."
-                project_tech="React - Bootstrap - Styled Components"
-              />
-              <ProjectCard
-                project_img={project_img_01}
-                project_name="Project 2"
-                project_desc="Proxy provider website including authentication, dashboard and dynamic features."
-                project_tech="React - Bootstrap - Styled Components"
-              />
-              <ProjectCard
-                project_img={project_img_01}
-                project_name="Project 3"
-                project_desc="Proxy provider website including authentication, dashboard and dynamic features."
-                project_tech="React - Bootstrap - Styled Components"
-              />
-              <ProjectCard
-                project_img={project_img_01}
-                project_name="Project 4"
-                project_desc="Proxy provider website including authentication, dashboard and dynamic features."
-                project_tech="React - Bootstrap - Styled Components"
-              />
-              <ProjectCard
-                project_img={project_img_01}
-                project_name="Project 5"
-                project_desc="Proxy provider website including authentication, dashboard and dynamic features."
-                project_tech="React - Bootstrap - Styled Components"
-              />
-              <ProjectCard
-                project_img={project_img_01}
-                project_name="Project 6"
-                project_desc="Proxy provider website including authentication, dashboard and dynamic features."
-                project_tech="React - Bootstrap - Styled Components"
-              />
-          </Grid>
+          <FeaturedProjectCards />          
         </Flex>
+        
+        <Box p="5em 15em 5em 15em" w="100%">
+          <Divider orientation="horizontal" colorScheme="white"/>
+        </Box>
+
+        {/* Experience */}
+        <Flex direction="row" p="0em 15em 0em 15em" align='flex-start' w="100%" alignItems='flex-start' verticalAlign='top' gridGap="5em">
+          <Text fontWeight="300" fontStyle="normal" fontSize="1.125rem">EXPERIENCE</Text>
+          <ExperienceList />
+        </Flex>
+
+        <Box p="5em 15em 5em 15em" w="100%">
+          <Divider orientation="horizontal" colorScheme="white"/>
+        </Box>
+
+        {/* Education */}
+        <Flex direction="row" p="0em 15em 0em 15em" align='flex-start' w="100%" alignItems='flex-start' verticalAlign='top' gridGap="5em">
+          <Text fontWeight="300" fontStyle="normal" fontSize="1.125rem">EDUCATION</Text>
+          <EducationList />
+        </Flex>
+
+        <Box p="5em 15em 5em 15em" w="100%">
+          <Divider orientation="horizontal" colorScheme="white"/>
+        </Box>
+
+        {/* Contact Footer */}
+        <Flex direction="row" p="0em 15em 10em 15em" align='flex-start' w="100%" alignItems='flex-start' verticalAlign='top' gridGap="5em" justify="space-between">
+          <Text fontWeight="300" fontStyle="normal" fontSize="1.125rem">CONTACT</Text>
+          <Flex direction="row" align="flex-start" w="100%" alignItems="flex-start" gridGap="1em">
+            <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaMailchimp />}>Send an email</Button>
+            <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaLinkedinIn />}>LinkedIn</Button>
+            <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaGithub />}>Github</Button>
+          </Flex>
+        </Flex>
+
       </VStack>
   );
 }

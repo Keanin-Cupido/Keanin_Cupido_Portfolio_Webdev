@@ -18,8 +18,8 @@ function ProjectCard(props) {
                 <FaLink />
             </Flex>
           </Flex>
-          <Text fontWeight="300" fontStyle="normal" fontSize="1rem"  color={isDark ? "#C4C4C4" : "#1A1A1A" } lineHeight="1.5em">{props.project_desc}</Text>
-          <Text fontWeight="300" fontStyle="normal" fontSize="0.875rem"  color="#6CACE4">{props.project_tech}</Text>
+          <Text fontWeight="300" fontStyle="normal" fontSize="1rem" color={isDark ? "#C4C4C4" : "#1A1A1A" } lineHeight="1.5em">{props.project_desc}</Text>
+          <Text fontWeight="300" fontStyle="normal" fontSize="0.875rem" color={isDark ? "#6CACE4" : "#004E93" }>{props.project_tech}</Text>
         </Flex>
     </Container>
   )
