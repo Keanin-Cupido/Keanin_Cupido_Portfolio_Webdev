@@ -4,9 +4,11 @@ import theme from './theme/theme';
 import App from './App';
 
 // Fonts
-import '@fontsource/inter'
+import '@fontsource/inter/200.css';
+import '@fontsource/inter/300.css';
+import '@fontsource/inter/700.css';
 
-import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 
 ReactDOM.render(
     <ChakraProvider theme={theme}>
