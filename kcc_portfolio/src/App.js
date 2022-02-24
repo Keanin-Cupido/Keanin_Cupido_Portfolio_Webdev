@@ -1,6 +1,7 @@
 import { Box, Button, Divider, Flex, Heading, Link, Text, VStack } from "@chakra-ui/react";
 import { FaArrowRight, FaGithub, FaLinkedinIn, FaMailchimp } from "react-icons/fa";
 import { useColorMode } from '@chakra-ui/color-mode'
+import { motion } from 'framer-motion';
 
 import Navbar from "./components/Navbar";
 import FeaturedProjectCards from "./components/ProjectCard/FeaturedProjectCards";
