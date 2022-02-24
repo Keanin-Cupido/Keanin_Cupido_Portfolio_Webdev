@@ -7,7 +7,7 @@ import project_img_01 from './img/project_img.jpg';
 
 function FeaturedProjectCards() {
   return (
-    <Grid pt="2em" align="left" templateColumns='repeat(3, 1fr)' gap="5em" justify="space-between">
+    <Grid p="3em 0em 0em 0em" m={0} align="left" w="100%" templateColumns={{md: 'repeat(2, 1fr)', lg: 'repeat(2, 1fr)', xl: 'repeat(3, 1fr)', '2xl': 'repeat(4, 1fr)'}} gap="5em" justify="space-between">
         {/* Project Card Components */}
         {/* Row 1 */}
         <ProjectCard

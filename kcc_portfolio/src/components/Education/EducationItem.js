@@ -8,7 +8,7 @@ function EducationItem(props) {
 
   return (
     <Flex direction="column" align='flex-start' w="100%" alignItems='flex-start' gridGap="0.5em">
-        <Flex direction="row" justify="space-between" align="flex-start" w="100%" alignItems="flex-start">
+        <Flex direction={{sm: "column", md: "row"}} gridGap={{sm: "1em", md: "0em"}} justify="space-between" align="flex-start" w="100%" alignItems="flex-start">
             <Text fontWeight="300" fontStyle="normal" fontSize="1.5rem">{props.name}</Text>
             <Text fontWeight="300" fontStyle="normal" fontSize="1rem" color={isDark ? "#C4C4C4" : "#1A1A1A" }>{props.duration}</Text>
         </Flex>

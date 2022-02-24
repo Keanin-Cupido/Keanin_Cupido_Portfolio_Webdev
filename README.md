@@ -8,3 +8,4 @@
 ## Acknowledgments
 * React Router V6
 * React Icons
+* Chakra-ui/theme-tools
