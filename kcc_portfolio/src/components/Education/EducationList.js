@@ -10,7 +10,8 @@ function EducationList() {
                 duration="2017-2021"
                 location="South Africa"
                 description={[
-                    "Bachelor's degree in Computer Science"
+                    "Bachelor's degree in Computer Science",
+                    "Majored in Mathematics and Computer Science"
                 ]}
             />
             <EducationItem 
@@ -18,7 +19,8 @@ function EducationList() {
                 duration="2014-2016"
                 location="South Africa"
                 description={[
-                    "Matric"
+                    "Grade 12 (Matric)",
+                    "Took subjects such as IT, Physical Sciences, Electrical Technology, and Pure Mathematics"
                 ]}
             />
         </Flex>

@@ -45,7 +45,7 @@ function App() {
           <FeaturedProjectCards />          
         </Flex>
         
-        <Box p="5em 15em 5em 15em" w="100%">
+        <Box p="0em 15em 5em 15em" w="100%">
           <Divider orientation="horizontal" colorScheme="white"/>
         </Box>
 
