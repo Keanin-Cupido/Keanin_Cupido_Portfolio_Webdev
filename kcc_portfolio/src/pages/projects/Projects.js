@@ -1,6 +1,6 @@
-import { Box, Button, Divider, Flex, Heading, Text, useColorMode, VStack } from '@chakra-ui/react'
+import { Box, Divider, Flex, Heading, Text, useColorMode, VStack } from '@chakra-ui/react'
 import React from 'react'
-import { FaGithub, FaLinkedinIn, FaMailchimp } from 'react-icons/fa';
+import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar'
 
 function Projects() {
@@ -18,8 +18,7 @@ function Projects() {
         justify="left" align="left" spacing="2em"
         pb="5em"
       >
-        <Flex direction="column" gridGap="1em">
-          <Text>Hey, I'm</Text>
+        <Flex direction="column">
           <Heading fontWeight="700" fontStyle="normal" fontSize="6rem" bgGradient='linear-gradient(90deg, #9845E8 0%, #33D2FF 20%, #DD5789 50%)' bgClip='text'>Projects</Heading>
         </Flex>
         
@@ -37,14 +36,8 @@ function Projects() {
       </Box>
 
       {/* Contact Footer */}
-      <Flex direction={{sm: "column", md: "row"}} align='flex-start' w="100%" alignItems='flex-start' verticalAlign='top' gridGap="5em" justify="space-between" pb="5em">
-        <Text fontWeight="300" fontStyle="normal" fontSize="1.125rem">CONTACT</Text>
-        <Flex direction={{sm: "column", md: "row"}} align="flex-start" w="100%" alignItems="flex-start" gridGap="1em">
-          <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaMailchimp />}>Send an email</Button>
-          <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaLinkedinIn />}>LinkedIn</Button>
-          <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaGithub />}>Github</Button>
-        </Flex>
-      </Flex>
+      <Footer />
+
   </VStack>
   )
 }

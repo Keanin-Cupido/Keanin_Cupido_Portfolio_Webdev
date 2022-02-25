@@ -1,12 +1,12 @@
-import { Box, Button, Divider, Flex, Heading, Link, Text, VStack } from "@chakra-ui/react";
-import { FaArrowRight, FaGithub, FaLinkedinIn, FaMailchimp } from "react-icons/fa";
+import { Box, Divider, Flex, Heading, Link, Text, VStack } from "@chakra-ui/react";
+import { FaArrowRight } from "react-icons/fa";
 import { useColorMode } from '@chakra-ui/color-mode'
-import { motion } from 'framer-motion';
 
 import Navbar from "./components/Navbar";
 import FeaturedProjectCards from "./components/ProjectCard/FeaturedProjectCards";
 import ExperienceList from "./components/Experience/ExperienceList";
 import EducationList from "./components/Education/EducationList";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -76,14 +76,7 @@ function App() {
         </Box>
 
         {/* Contact Footer */}
-        <Flex direction={{sm: "column", md: "row"}} align='flex-start' w="100%" alignItems='flex-start' verticalAlign='top' gridGap="5em" justify="space-between" pb="5em">
-          <Text fontWeight="300" fontStyle="normal" fontSize="1.125rem">CONTACT</Text>
-          <Flex direction={{sm: "column", md: "row"}} align="flex-start" w="100%" alignItems="flex-start" gridGap="1em">
-            <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaMailchimp />}>Send an email</Button>
-            <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaLinkedinIn />}>LinkedIn</Button>
-            <Button color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="300" fontSize="1rem" aria-label="My Email Contact" leftIcon={<FaGithub />}>Github</Button>
-          </Flex>
-        </Flex>
+        <Footer />
 
       </VStack>
   );
