@@ -7,8 +7,6 @@ import theme from './theme/theme';
 import App from './App';
 import Projects from './pages/projects/Projects';
 import Skills from './pages/skills/Skills';
-import CV from './pages/cv/CV';
-import Contact from './pages/contact/Contact';
 
 // Fonts
 import '@fontsource/inter/200.css';
@@ -25,8 +23,6 @@ ReactDOM.render(
           <Route path="/" element={<App />} />
           <Route path="projects" element={<Projects />} />
           <Route path="skills" element={<Skills />} />
-          <Route path="cv" element={<CV />} />
-          <Route path="contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </ChakraProvider>,

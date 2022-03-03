@@ -56,8 +56,6 @@ function Navbar(props) {
         >
           <Link fontStyle="normal" fontWeight="200" fontSize="1.125rem" as={ReactLink} to='/projects'>Projects</Link>
           <Link fontStyle="normal" fontWeight="200" fontSize="1.125rem" as={ReactLink} to='/skills'>Skills</Link>
-          <Link fontStyle="normal" fontWeight="200" fontSize="1.125rem" as={ReactLink} to='/cv'>CV</Link>
-          <Link fontStyle="normal" fontWeight="200" fontSize="1.125rem" as={ReactLink} to='/contact'>Contact</Link>
           <IconButton icon={isDark ? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
         </Stack>
       </Box>

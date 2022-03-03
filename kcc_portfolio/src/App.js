@@ -1,12 +1,10 @@
-import { Box, Divider, Flex, Heading, Link, Text, VStack } from "@chakra-ui/react";
-import { FaArrowRight } from "react-icons/fa";
+import { Box, Divider, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import { useColorMode } from '@chakra-ui/color-mode';
 
 import Navbar from "./components/Navbar";
 import FeaturedProjectCards from "./components/ProjectCard/FeaturedProjectCards";
-import ExperienceList from "./components/Experience/ExperienceList";
-import EducationList from "./components/Education/EducationList";
-import Footer from "./components/Footer";
+import Contact from "./pages/contact/Contact";
+import CV from "./pages/cv/CV";
 
 function App() {
 
@@ -34,14 +32,6 @@ function App() {
               I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. 
               I have been freelancing for a year now while studying at the university and I've manage to gain a decent amount of experience and valuable knowledge from all different kinds of fields throughout my projects/work.
             </Text>
-            <Flex direction="row" justify="left" align="center" gridGap="1em">
-              <Link>
-                <Text fontWeight="300" fontStyle="normal" fontSize="1.5rem" >
-                  Say hi
-                </Text>
-              </Link>
-              <FaArrowRight />
-            </Flex>
           </Flex>
         </VStack>
 
@@ -55,28 +45,11 @@ function App() {
           <Divider orientation="horizontal" colorScheme="white"/>
         </Box>
 
-        {/* Experience */}
-        <Flex direction={{sm: "column", md: "row"}} align='flex-start' w="100%" alignItems='flex-start' verticalAlign='top' gridGap="5em" pb="5em">
-          <Text fontWeight="300" fontStyle="normal" fontSize="1.125rem">EXPERIENCE</Text>
-          <ExperienceList />
-        </Flex>
+        {/* CV */}
+        <CV />
 
-        <Box w="100%" pb="5em">
-          <Divider orientation="horizontal" colorScheme="white"/>
-        </Box>
-
-        {/* Education */}
-        <Flex direction={{sm: "column", md: "row"}} pb="5em" align='flex-start' w="100%" alignItems='flex-start' verticalAlign='top' gridGap="5em">
-          <Text fontWeight="300" fontStyle="normal" fontSize="1.125rem">EDUCATION</Text>
-          <EducationList />
-        </Flex>
-
-        <Box w="100%" pb="5em">
-          <Divider orientation="horizontal" colorScheme="white"/>
-        </Box>
-
-        {/* Contact Footer */}
-        <Footer />
+        {/* Contact Section */}
+        <Contact />
 
       </VStack>
   );

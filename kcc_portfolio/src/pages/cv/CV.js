@@ -3,8 +3,6 @@ import React from 'react'
 import { FaChevronDown } from 'react-icons/fa';
 import EducationList from '../../components/Education/EducationList';
 import ExperienceList from '../../components/Experience/ExperienceList';
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar'
 
 function CV() {
 
@@ -13,22 +11,19 @@ function CV() {
 
   return (
     <VStack w="100%"
-      p={{ sm: '5em 5em 5em 5em', md: '5em 5em 5em 5em', lg: '5em 10em 5em 10em', xl: '5em 15em 5em 15em' }}
       alignItems="flex-start"
     >
-      <Navbar />
-
       <VStack w="100%" 
         justify="left" align="left" spacing="2em"
         pb="5em"
       >
         <Flex direction="column">
-          <Heading fontWeight="700" fontStyle="normal" fontSize="6rem" bgGradient='linear-gradient(90deg, #9845E8 0%, #33D2FF 20%, #DD5789 50%)' bgClip='text'>Curriculum Vitae</Heading>
+          <Heading fontWeight="700" fontStyle="normal" fontSize="4rem" bgGradient='linear-gradient(90deg, #9845E8 0%, #33D2FF 20%, #DD5789 50%)' bgClip='text'>Curriculum Vitae</Heading>
         </Flex>
         
         <Flex direction="column" gridGap="1.5em" flexGrow="1">
           <Link w="max-content" color={isDark ? "#F0F0F0" : "#1A1A1A" } href="https://github.com/Keanin-Cupido" isExternal>github.com/Keanin-Cupido</Link>
-          <Text color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="200" fontStyle="normal" fontSize="1.125rem" w="50%">
+          <Text color={isDark ? "#F0F0F0" : "#1A1A1A" } fontWeight="200" fontStyle="normal" fontSize="1.125rem">
             A creative web developer with a passion for design, animation, interaction, problem-solving, and for mastering the latest front-end technologies.
           </Text>
           <Menu>
@@ -67,9 +62,6 @@ function CV() {
       <Box w="100%" pb="5em" pt="5em">
         <Divider orientation="horizontal" colorScheme="white"/>
       </Box>
-
-      {/* Contact Footer */}
-      <Footer />
   </VStack>
   )
 }
