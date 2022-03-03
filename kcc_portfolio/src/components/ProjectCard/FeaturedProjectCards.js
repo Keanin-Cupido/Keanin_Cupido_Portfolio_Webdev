@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
 
-// Project Images
+// Projects Images
 import project_img_01 from './img/project_img.jpg';
 
 function FeaturedProjectCards() {

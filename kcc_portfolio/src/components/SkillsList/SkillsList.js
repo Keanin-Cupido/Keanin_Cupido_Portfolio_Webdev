@@ -2,14 +2,14 @@ import { Box, Divider, Flex, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
 
 // Icons
-import { FaCss3, FaHtml5, FaJs, FaPhp, FaPython, FaReact } from 'react-icons/fa'
-import { SiAdobeillustrator, SiAdobephotoshop, SiBlender, SiBootstrap, SiChakraui, SiExpress, SiFigma, SiGit, SiGithub, SiJquery, SiMongodb, SiNodedotjs, SiNpm, SiSass, SiSemanticuireact, SiTypescript, SiUnrealengine, SiVisualstudiocode } from 'react-icons/si'
+import { FaCss3, FaHtml5, FaJs, FaPython, FaWordpress } from 'react-icons/fa'
+import { SiAdobeillustrator, SiAdobephotoshop, SiBlender, SiBootstrap, SiChakraui, SiExpress, SiFigma, SiGit, SiGithub, SiMongodb, SiNextdotjs, SiNodedotjs, SiNpm, SiReact, SiSass, SiSemanticuireact, SiTailwindcss, SiTypescript, SiUnrealengine, SiVisualstudiocode } from 'react-icons/si'
 import SkillsItem from './SkillsItem'
 
 
 function SkillsList() {
   return (
-    <HStack align="left" justify="space-between">
+    <HStack align="left" justify="flex-start" spacing="10em">
         <Flex direction="column" gridGap="1em">
             <Text fontWeight="300" fontStyle="normal" fontSize="1rem" align="left" justify="left" pb="0.5em">Languages & Libraries</Text>
             <SkillsItem 
@@ -25,12 +25,12 @@ function SkillsList() {
                 name="JavaScript"
             />
             <SkillsItem 
-                icon={<SiJquery size="30px" />}
-                name="jQuery"
+                icon={<SiReact size="30px" />}
+                name="React JS"
             />
             <SkillsItem 
-                icon={<FaReact size="30px" />}
-                name="React JS"
+                icon={<SiNextdotjs size="30px" />}
+                name="Next.js"
             />
             <SkillsItem 
                 icon={<SiTypescript size="30px" />}
@@ -45,6 +45,10 @@ function SkillsList() {
                 name="Bootstrap"
             />
             <SkillsItem 
+                icon={<SiTailwindcss size="30px" />}
+                name="Tailwind CSS"
+            />
+            <SkillsItem 
                 icon={<SiChakraui size="30px" />}
                 name="Chakra UI"
             />
@@ -57,10 +61,6 @@ function SkillsList() {
                 <Divider orientation="horizontal" colorScheme="white"/>
             </Box>
             
-            <SkillsItem 
-                icon={<FaPhp size="30px" />}
-                name="PHP"
-            />
             <SkillsItem 
                 icon={<FaPython size="30px" />}
                 name="Python"
@@ -125,15 +125,8 @@ function SkillsList() {
         <Flex direction="column" gridGap="1em">
             <Text fontWeight="300" fontStyle="normal" fontSize="1rem" align="left" justify="left" pb="0.5em">Platforms</Text>
             <SkillsItem 
-                icon={<FaHtml5 size="30px" />}
-                name="HTML"
-            />
-        </Flex>
-        <Flex direction="column" gridGap="1em">
-            <Text fontWeight="300" fontStyle="normal" fontSize="1rem" align="left" justify="left" pb="0.5em">Miscellaneous</Text>
-            <SkillsItem 
-                icon={<FaHtml5 size="30px" />}
-                name="HTML"
+                icon={<FaWordpress size="30px" />}
+                name="Wordpress"
             />
         </Flex>
     </HStack>

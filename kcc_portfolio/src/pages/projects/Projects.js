@@ -2,6 +2,7 @@ import { Box, Divider, Flex, Heading, Text, useColorMode, VStack } from '@chakra
 import React from 'react'
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar'
+import ProjectsCards from './ProjectsCards';
 
 function Projects() {
 
@@ -31,7 +32,10 @@ function Projects() {
         </Flex>
       </VStack>
 
-      <Box w="100%" pb="5em">
+      {/* Projects */}
+      <ProjectsCards />
+
+      <Box w="100%" pb="5em" pt="5em">
         <Divider orientation="horizontal" colorScheme="white"/>
       </Box>
 

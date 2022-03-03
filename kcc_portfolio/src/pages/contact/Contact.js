@@ -1,5 +1,7 @@
 import { Box, Divider, Flex, Heading, Text, useColorMode, VStack } from '@chakra-ui/react'
 import React from 'react'
+import { FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar'
 
@@ -30,6 +32,26 @@ function Contact() {
       </VStack>
 
       {/* Contacts */}
+      <VStack justify="flex-start" align="left" alignItems="left" w="100%" pb="5em">
+        <Flex direction="row" gridGap="1em" justify="left" align="center">
+          <FaPhoneAlt size="1.5em"/>
+          <Text fontSize="1.5rem">
+            081 705 8297
+          </Text>
+        </Flex>
+        <Flex direction="row" gridGap="1em" justify="left" align="center">
+          <SiGmail size="1.5em"/>
+          <Text fontSize="1.5rem">
+            iamkeanincupido@gmail.com
+          </Text>
+        </Flex>
+        <Flex direction="row" gridGap="1em" justify="left" align="center">
+          <FaLocationArrow size="1.5em"/>
+          <Text fontSize="1.5rem">
+            Cape Town, South Africa
+          </Text>
+        </Flex>
+      </VStack>
 
 
       <Box w="100%" pb="5em">
